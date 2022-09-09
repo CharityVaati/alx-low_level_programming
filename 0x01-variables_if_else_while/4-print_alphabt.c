@@ -1,22 +1,22 @@
 #include <stdio.h>
-
 /**
- * main - print alphabet except q and e
+ *main - entry point
  *
- * Return: zero
+ *Description: prints whole alphabet in lowercase except q and c
+ *
+ *Return: Always zero(successful)
+ *
  */
 int main(void)
 {
-char ch;
+int letter, n;
 
-for (ch = a; ch <= z; ch++)
+for (letter = 97, n = 1; n < 27; letter++, n++)
 {
-if (ch == e || ch == q)
-{
+if (letter == 101 || letter == 113)
 continue;
+putchar(letter);
 }
-putchar(ch);
-}
-putchar(n);
+putchar(10);
 return (0);
 }
