@@ -1,21 +1,18 @@
 #include <stdio.h>
-
+#include <ctype.h>
 /**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return: Always 0 (Success)
- */
-
+*main - Program to print alphabet letters in reverse followed by new line
+*
+*Return: return 0
+*/
 int main(void)
 {
-char ch;
+int letter;
 
-for (ch = z; ch >= a; ch--)
+for (letter = z; letter >= a; letter--)
 {
-putchar(ch);
+putchar(letter);
 }
-
-putchar(10); /* this is an ascii code for new line*/
-
+putchar(n);
 return (0);
 }
