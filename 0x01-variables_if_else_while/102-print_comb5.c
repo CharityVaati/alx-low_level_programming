@@ -1,33 +1,43 @@
 #include <stdio.h>
+
 /**
- *main - entry point
- *
- *Return:0 - success
- *
+ *main - assign a random number to the variable n each time it is executed
+ *and print the last digit of the number stored in the variable n
+ *Return: Always 0 (Success)
  */
+
 int main(void)
 {
-int a, b;
 
-for (a = 0; a < 100; a++)
+int i, j;
+
+for (i = 0; i < 100; i++)
 {
-for (b = 1; b < 100; b++)
+for (j = 0; j < 100; j++)
 {
-if (a < b)
+if (i < j)
 {
-putchar((a / 10) + 0);
-putchar((a % 10) + 0);
+putchar((i / 10) + 48);
+
+putchar((i % 10) + 48);
+
 putchar( );
-putchar((b / 10) + 0);
-putchar((b % 10) + 0);
-if (!(a == 98 && b == 99))
+
+putchar((j / 10) + 48);
+
+putchar((j % 10) + 48);
+
+if (i != 98 || j != 99)
 {
 putchar(,);
+
 putchar( );
 }
 }
 }
 }
+
 putchar(n);
+
 return (0);
 }
