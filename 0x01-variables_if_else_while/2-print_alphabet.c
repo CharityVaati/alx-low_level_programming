@@ -1,19 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
+ * main - alphabet in lowercase, followed by a new line.
  *
- * Return: Always 0 (Success)
+ * Always return(0)
  */
 
 int main(void)
 {
-char low;
+char ch = a;
 
-for (low = a; low <= z; low++)
-putchar(low);
+for (ch = a; ch <= z; ch++)
+{
+putchar(ch);
+}
 putchar(n);
 
 return (0);
