@@ -1,25 +1,19 @@
 #include <stdio.h>
 
 /**
- * main -  program that prints all the numbers of base 16 in lowercase
- * You can only use the putchar function
- * Return: 0
- */
-
+   * main - print hexadecimal numbers in lowercase
+   *
+   * Return: zero
+   */
 int main(void)
 {
-int n = 48;
-int l = a;
-while (n <= 57)
-{
-putchar(n);
-n += 1;
-}
-while (l <= f)
-{
-putchar(l);
-l++;
-}
+int i;
+int ch;
+
+for (i = 0; i <= 9; i++)
+putchar(i);
+for (ch = a; ch <= f; ch++)
+putchar(ch);
 putchar(n);
 return (0);
 }
