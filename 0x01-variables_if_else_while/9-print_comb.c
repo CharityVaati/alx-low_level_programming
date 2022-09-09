@@ -1,26 +1,23 @@
 #include <stdio.h>
-
 /**
- * main -  program that prints all possible combinations of single-digit
- * Numbers must be separated by ,followed by a space
- * Numbers should be printed in ascending order
- * You can only use the putchar function
- * Return: 0
+ *main - Entry point
+ *Description: Print all single digit numbers of base 10
+ *stating from 0, followed by a new line
+ *Return: 0
  */
-
 int main(void)
 {
-int n = 48;
-int com = 44;
-while (n <= 57)
+int c = 0;
+
+while (c < 10)
 {
-putchar(n);
-if (n != 57)
+putchar(48 + c);
+if (c != 9)
 {
-putchar(com);
-putchar(32);
+putchar(,);
+putchar( );
 }
-n += 1;
+c++;
 }
 putchar(n);
 return (0);
