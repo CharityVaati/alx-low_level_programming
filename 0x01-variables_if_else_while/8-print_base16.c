@@ -1,27 +1,27 @@
 #include <stdio.h>
-
+#include <ctype.h>
 /**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return: Always 0 (Success)
- */
-
+*main - Prints all single digits of base 16 followed by new line
+*
+*Return: returns 0
+*/
 int main(void)
 {
-char ch;
-int n;
+int digit;
 
-for (n = 48; n <= 57; n++)
+for (digit = 0; digit <= 9; digit++)
 {
+putchar(digit);
+if (digit == 9)
+{
+digit = a;
+for (; digit <= f; digit++)
+{
+putchar(digit);
+}
+break;
+}
+}
 putchar(n);
-}
-
-for (ch = a; ch <= f; ch++)
-{
-putchar(ch);
-}
-
-putchar(10);
-
 return (0);
 }
