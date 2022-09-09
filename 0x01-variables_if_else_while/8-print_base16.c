@@ -1,23 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ *main -> assign a random number to the variable n each time it is executed
+ *and print the last digit of the number stored in the variable n
+ *Return: Always 0 (Success)
  */
 
 int main(void)
 {
-int d;
-char low;
+char ch;
+int n;
 
-for (d = 0; d <= 9; d++)
-putchar(d);
-for (low = a; low <= f; low++)
-putchar(low);
+for (n = 48; n <= 57; n++)
+{
 putchar(n);
+}
+
+for (ch = a; ch <= f; ch++)
+{
+putchar(ch);
+}
+
+putchar(10);
 
 return (0);
 }
