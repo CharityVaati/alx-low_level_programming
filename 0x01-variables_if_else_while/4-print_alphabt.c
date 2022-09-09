@@ -1,25 +1,28 @@
 #include <stdio.h>
-
 /**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return: Always 0 (Success)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success/correct)
  */
 
 int main(void)
-{
 
-char ch;
+{
+char alphabet;
 
-for (ch = a; ch <= z; ch++)
+for (alphabet = a; alphabet <= z; alphabet++)
 {
-if (ch != q && ch != e)
-{
-putchar(ch);
+if (alphabet == q)
+continue;
+
+else if (alphabet == e)
+continue;
+
+putchar(alphabet);
 }
-}
 
-putchar(10); /* this is an ascii code for new line*/
+putchar(n);
 
 return (0);
+
 }
