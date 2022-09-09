@@ -1,27 +1,25 @@
 #include <stdio.h>
 
 /**
- *main -> assign a random number to the variable n each time it is executed
- *and print the last digit of the number stored in the variable n
- *Return: Always 0 (Success)
+ * main -  program that prints all the numbers of base 16 in lowercase
+ * You can only use the putchar function
+ * Return: 0
  */
 
 int main(void)
 {
-char ch;
-int n;
-
-for (n = 48; n <= 57; n++)
+int n = 48;
+int l = a;
+while (n <= 57)
 {
 putchar(n);
+n += 1;
 }
-
-for (ch = a; ch <= f; ch++)
+while (l <= f)
 {
-putchar(ch);
+putchar(l);
+l++;
 }
-
-putchar(10);
-
+putchar(n);
 return (0);
 }
