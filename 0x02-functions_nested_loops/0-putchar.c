@@ -1,9 +1,12 @@
 #include "main.h"
 
+
 /**
- * main - the driver function print _putchar followed on a new line
- * Return: always 0
+ * main - Entry point
+ *
+ * Return: nothing, return void
  */
+
 int main(void)
 {
 _putchar(_);
