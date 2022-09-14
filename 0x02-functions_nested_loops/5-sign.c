@@ -1,48 +1,29 @@
 #include "main.h"
+
 /**
- * print_sign - entry point
- * @n : number to check
- * Return:0 or 1
- */
+ * print_sign - prints the sign of a number
+ * @n: number that is going to be checked
+ * Return: 1 if @n > zero, 0 if @n = zero and -1 if @n < zero
+**/
 
 int print_sign(int n)
-
 {
-
-int numz;
-
-
+int ret;
 
 if (n > 0)
-
 {
-
-numz = 1;
-
 _putchar(+);
-
+ret = 1;
 }
-
 else if (n == 0)
-
 {
-
-numz = 0;
-
 _putchar(0);
-
+ret = 0;
 }
-
-else
-
+else if (n < 0)
 {
-
-numz = -1;
-
 _putchar(-);
-
+ret = -1;
 }
-
-return (numz);
-
+return (ret);
 }
