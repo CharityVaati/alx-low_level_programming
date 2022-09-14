@@ -1,25 +1,45 @@
 #include <stdio.h>
 /**
- *main - entry point
- *
- *Description:prints first 98 fibonnacci numbers
- *
- *Return: zero(success)
- *
- */
+*main - prints out first 98
+*fibonacci suit numbers
+*Return: return 0
+*/
 int main(void)
 {
-long int i, t1 = 1, t2 = 2, sum = 0;
+int inc;
+unsigned long n1 = 0, n2 = 1, n3;
+unsigned long n1_h1, n1_h2, n2_h1, n2_h2;
+unsigned long h1, h2;
 
-for (i = 1; i < 98; i++)
+for (inc = 0; inc < 92; inc++)
 {
-printf("%ld, ", t1);
-sum = t1 + t2;
-t1 = t2;
-t2 = sum;
-if (i == 97)
+n3 = n1 + n2;
+printf("%lu, ", n3);
+n1 = n2;
+n2 = n3;
+}
+n1_h1 = n1 / 10000000000;
+n2_h1 = n2 / 10000000000;
+n1_h2 = n1 % 10000000000;
+n2_h2 = n2 % 10000000000;
+for (inc = 93; inc < 99; inc++)
 {
-printf("%ld\n", t1);
+h1 = n1_h1 + n2_h1;
+h2 = n1_h2 + n2_h2;
+if ((n1_h2 + n2_h2) > 9999999999)
+{
+h1 += 1;
+h2 %= 10000000000;
 }
+printf("%lu%lu", h1, h2);
+if (inc != 98)
+printf(", ");
+
+n1_h1 = n2_h1;
+n1_h2 = n2_h2;
+n2_h1 = h1;
+n2_h2 = h2;
 }
+printf("\n");
+return (0);
 }
