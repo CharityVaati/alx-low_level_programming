@@ -1,21 +1,16 @@
-#include "main.h"
-
+#include “main.h”
 /**
- * print_alphabet - check the code for ALX School students.
- *
- * Return: Always 0.
- */
-
-void print_alphabet(void)
+* print_alphabet – function to print abc
+*
+* Return: 0
+*/
+Void print_alphabet(void)
 {
-char alp = a;
+Char c;
 
-while (alp <= z)
+For (c = ‘a’; c <= ‘z’; c++)
 {
-_putchar (alp);
-alp++;
-
+ _putchar©;
 }
-_putchar (n);
-
+_putchar(‘\n’);
 }
