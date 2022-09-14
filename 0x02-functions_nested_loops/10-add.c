@@ -1,16 +1,13 @@
 #include "main.h"
 
 /**
- * add - returns sum of parameters
- * @a: int type
- * @b: int typr
- * Return: 0
- */
+ * add - adds two integers and returns the result.
+ * @num1: int to be added to num2
+ * @num2: int to be added to num1
+ * Return: @a + @b
+**/
 
-int add(int a, int b)
-
+int add(int num1, int num2)
 {
-
-return (a + b);
-
+return (num1 + num2);
 }
