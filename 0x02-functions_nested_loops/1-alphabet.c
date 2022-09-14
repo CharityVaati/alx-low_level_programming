@@ -1,20 +1,19 @@
-#include "main.h"
-
-/**
- * print_alphabet - print alphabet lowercase
+#include "main.h" /**
+ * print_alphabet - entry point
  *
- * Return: Always 0.
+ * Description: Prints the alphabet with _putchar
+ *
+ * Return: void
  */
+
 
 void print_alphabet(void)
 {
-char alphabet;
+char c;
 
-for (alphabet = a; alphabet <= z; alphabet++)
+for (c = a; c <= z; c++)
 {
-_putchar(alphabet);
+_putchar(c);
 }
-
 _putchar(n);
-
 }
