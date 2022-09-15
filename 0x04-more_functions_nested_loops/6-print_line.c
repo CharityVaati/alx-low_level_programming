@@ -1,14 +1,18 @@
 #include "main.h"
+
 /**
-*print_line - prints a straight line
-*@n:parameter
-*Return:returns nothing
-*/
+ * print_line - check for a digit
+ * @n : number of _ to be printed
+ * Return: void
+ */
 void print_line(int n)
 {
-while (n-- > 0)
+int i = 0;
+
+while (i < n && n > 0)
 {
 _putchar(_);
+i++;
 }
 _putchar(n);
 }
